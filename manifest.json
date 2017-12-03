@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Nomenclator",
+    "description": "A browser extension to convert historical personal names and placenames into their meanings, as is often done to Native American names.",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
