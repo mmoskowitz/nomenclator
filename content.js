@@ -1,4 +1,13 @@
+var names = [
+    ["Ovid", "Egg-Shaped"]
+];
+
 var elements = document.getElementsByTagName('*');
+
+var regexes = [];
+for (var i = 0; i < names.length; i++) {
+    regexes[i] = new RegExp("\\b" + names[i][0] + "\\b");
+}
 
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -8,10 +17,14 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/\bOvid\b/g, 'Egg-shaped');
+	    var newText = text;
+	    for (var k = 0; k < names.length; k++){
+		var regex = regexes[k]
+		newText = newText.replace(regex, names[k][1]);
+	    }
 
-            if (replacedText !== text) {
-                element.replaceChild(document.createTextNode(replacedText), node);
+            if (newText !== text) {
+                element.replaceChild(document.createTextNode(newText), node);
             }
         }
     }
