@@ -1,5 +1,13 @@
 var names = [
-    ["Ovid", "Egg-Shaped"]
+    ["Achilles", "He-Whose-People-Have-Distress"],
+    ["Agamemnon", "Unbowed"],
+    ["Ajax", "Of-The-Land"],
+    ["Diomedes", "Advised-By-God"],
+    ["Menelaus", "Wrath-Of-The-People"],
+    ["Odysseus", "He-Who-Is-Wroth"],
+    ["Ovid", "Egg-Shaped"],
+    ["Patroclus", "Glory-Of-The-Father"],
+    ["ZZZ", "Zzz"]
 ];
 
 var elements = document.getElementsByTagName('*');
