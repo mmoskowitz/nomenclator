@@ -4,6 +4,7 @@ var names = [
     ["Ajax", "Of-The-Land"],
     ["Diomedes", "Advised-By-God"],
     ["Menelaus", "Wrath-Of-The-People"],
+    ["Nestor", "One-Who-Returns-From-Travels"],
     ["Odysseus", "He-Who-Is-Wroth"],
     ["Ovid", "Egg-Shaped"],
     ["Patroclus", "Glory-Of-The-Father"],
